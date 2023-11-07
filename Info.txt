@@ -1,0 +1,5 @@
+Student_id:2313110658
+Student_name: Phithawat Nethawat
+Major:IT
+Level:1
+Faculty:Information Technology

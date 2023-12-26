@@ -1,19 +1,23 @@
 import java.util.Scanner;
 
 public class Lab603 {
-	static Scanner input = new Scanner(System.in);
-	static String fname , mname,lname;
-	static int space;
 	public static void main(String[] args) {
-		System.out.print("Please enter your name, separated by a space. ");
-		String funame = input.nextLine();
-		space = funame.trim().indexOf(" ");
-		fname= funame.substring(0,space);
-		System.out.print(fname);
-		abbreviatName(funame)
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Please enter your name, separated by a space. "
+				+ "\n:");
+		String fullname = scan.nextLine();
+ 
+		String firstname = fullname.substring(0, fullname.indexOf(" "));
+		String abbreviatName = abbreviatName(fullname);
+		System.out.println(abbreviatName + " " + firstname);     
 	}
+ 
 	public static String abbreviatName(String fullname) {
-		
+		for(int i = 0; i < fullname.length(); i++) {
+			if(fullname.charAt(i) == ' ') {
+				return fullname.charAt(i + 1) + "." + fullname.charAt(i + 6);
+			}
+		}
+		return fullname.substring(0, fullname.indexOf(" "));
 	}
-
 }

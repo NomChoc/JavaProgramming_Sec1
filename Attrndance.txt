@@ -1,4 +1,4 @@
 Id:2313110658
 Name-Surname:Phithawat Netkhun
-Date: Dec-26-2023
-Topic: Array and Array Method
+Date: Jan-9-2024
+Topic: Class and Object
